@@ -1,0 +1,92 @@
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #e6ffe6;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/*the feed styles*/
+h1{
+  color: green;
+  font-size: 40px;
+}
+#one{
+  height: 300px;
+  width: 27%;
+  float: left;
+  border: 5px solid #006600;
+  background-color: #ccffcc;
+}
+#two{
+  height: auto;
+  width: 42%;
+  float: left;
+  border: 5px solid #00cc00;
+  margin-right: 6px;
+  margin-left: 6px;
+  background-color: white;
+}
+#three{
+  height: 300px;
+  width: 27%;
+  float: left;
+  border: 5px solid #006600;
+  background-color: #ccffcc;
+
+}
+nav{
+  width: 100%;
+  height: 30px;
+  background-color: #009900;
+  font-size: 20px;
+  display: flex;
+  padding-top: 10px;
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
+.navlinks{
+  flex: 1;
+  text-align: center;
+  color: white;
+  font-family: 'Mina', sans-serif;
+  text-decoration: none;
+}
+.navlinks:hover{
+  text-decoration: underline;
+  color: lightgrey;
+}
+header{
+  font-size: 50px;
+  color: green;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Artifika', serif;
+  font-weight: 800;
+}
+#followers{
+  height: 300px;
+  width: 70%;
+  float: left;
+  border: 5px solid #00cc00;
+  margin-right: 6px;
+  margin-left: 6px;
+  background-color: white;
+}
+.loogies{
+  width: 75%;
+  height: auto;
+  border: 5px solid green;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+p{
+  font-size: 30px;
+  font-family: 'Artifika', serif;
+}

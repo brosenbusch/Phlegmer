@@ -1,0 +1,46 @@
+<header>
+  Phlegmer
+  <link href="https://fonts.googleapis.com/css?family=Artifika" rel="stylesheet">
+</header>
+<nav>
+  <a class="navlinks"href="/spittoon">Spittoon</a>
+  <a class="navlinks"href="#">Notifications</a>
+  <a class="navlinks"href="#">Messages</a>
+  <a class="navlinks"href="users/myprofile">My Profile</a>
+  <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+</nav>
+<h1>Spittoon</h1>
+<form class="" action="/users/loogiedisplay/" method="post">
+    <div class="" style="margin: 24px auto;">
+        <input id="id" type="text" name="id" style="width:300px;"class="" placeholder="serach for loogie by number">
+        <input type="submit" class="" value="Search">
+    </div>
+</form>
+<section id="one">
+  <div id="trending">
+    trending loogies
+  </div>
+</section>
+<section id="two">
+  <ul>
+    <li>
+      <div class="loogies">
+        <h4>{{loogie.id}}</h4>
+        <p>{{loogie.content}}</p>
+      </div>
+    </li>
+    <li>
+      <div class="loogies">
+        <h4>{{loogie.id}}</h4>
+        <p>{{loogie.content}}</p>
+      </div>
+    </li>
+    <li></li>
+    <li></li>
+  </ul>
+</section>
+<section id="three">
+  <div id="suggestions">
+    all of the suggested users to follow
+  </div>
+</section>

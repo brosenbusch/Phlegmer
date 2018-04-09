@@ -1,0 +1,42 @@
+<header>
+  Phlegmer
+</header>
+<nav>
+  <a class="navlinks"href="/spittoon">Spittoon</a>
+  <a class="navlinks"href="#">Notifications</a>
+  <a class="navlinks"href="#">Messages</a>
+  <a class="navlinks"href="/users/myprofile">My Profile</a>
+  <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+</nav>
+<h1>My Profile</h1>
+
+
+<img src="{{user.profilelink}}" alt="">
+
+
+<section id="one">
+  <div id="trending">
+    <h2>username {{user.name}}</h2>
+    <h2>{{user.title}}</h2>
+  </div>
+</section>
+<section id="followers">
+  <div class="loogies">
+    {{#if error}} <span>{{error}}</span>{{/if}}
+    <form action="/users/myprofile" method="post">
+      <div class="form-group">
+          <label>ID</label>
+          <input type="text" name="id" placeholder="loogie title">
+        </div>
+        <div class="form-group">
+          <label>Content</label>
+          <input type="text" name="content" placeholder="hack loogie">
+        </div>
+        <input type="submit" class="btn btn-primary" value="hack">
+      </form>
+  </div>
+  <div id="loogie">
+    <a href="#">{{user.username}}</a>
+    <a href="#">{{loogie.text}}</a>
+  </div>
+</section>
