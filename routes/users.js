@@ -59,7 +59,7 @@ router.get('/all',function(req, res, next){
                 let item = "loogielist"+d;
                 loogielist[item] = data[d];
             }
-            res.render('allloogies', loogielist);
+            res.render('spittoon', loogielist);
             console.log(data);
             console.log(loogielist);
         }
