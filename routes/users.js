@@ -47,25 +47,25 @@ router.delete('/delete/:id', function(req,res,next){
   res.redirect('/')
 });
 
-router.get('/all',function(req, res, next){
-    client.keys('loogie*', function(err, data){
-        if(err){
-            console.log(err);
+router.get('/goto/:id',function (req, res){
+    let id = req.params.id;
+    client.hgetall(id,function(err,obj){
+        if(!obj){
+            console.log(id);
+            res.render('index',{
+                error: 'event does not exist',
+                title: 'NO!'
+            });
         }
         else{
-            let loogielist = {};
-
-            for(let d=0; d<data.length; d++){
-                let item = "loogielist"+d;
-                loogielist[item] = data[d];
-            }
-            res.render('spittoon', loogielist);
-            console.log(data);
-            console.log(loogielist);
+            console.log(obj);
+            obj.id = req.params.id;
+            res.render('display',{
+                loogie:obj
+            });
         }
-    });
+    })
 });
-
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
