@@ -21,6 +21,9 @@ h1{
   border: 5px solid #006600;
   background-color: #ccffcc;
 }
+#one div{
+  margin-left: 20px;
+}
 #two{
   height: auto;
   width: 42%;
@@ -36,7 +39,9 @@ h1{
   float: left;
   border: 5px solid #006600;
   background-color: #ccffcc;
-
+}
+#three div{
+  margin-left: 20px;
 }
 nav{
   width: 100%;
@@ -93,9 +98,27 @@ header{
 }
 p{
   font-size: 30px;
-  font-family: 'Artifika', serif;
 }
 a{
   color: black;
   text-decoration: none;
+}
+#notifications{
+  width: 95%;
+  height: 100px;
+  margin: 0 auto;
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  margin-top:40px;
+}
+h2{
+  font-size: 24px;
+}
+h5{
+  font-style: italic;
+  font-size: 18px;
+}
+h6{
+  font-size: 18px;
+  margin: 0px;
 }

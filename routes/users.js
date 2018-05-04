@@ -19,7 +19,7 @@ router.post('/myprofile',function(req,res,next){
     }
     else{
       console.log(reply);
-      res.redirect('/')
+      res.redirect('/spittoon')
     }
   });
 })
@@ -72,6 +72,14 @@ router.get('/', function(req, res, next) {
 });
 
 //prefaced by /user/routename
+
+router.get('/notifications',function(req,res,next){
+  res.render('notifications');
+});
+
+router.get('/messages',function(req,res,next){
+  res.render('messages');
+});
 
 router.get('/myprofile',function(req,res,next){
   res.render('myprofile');
